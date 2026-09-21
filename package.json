@@ -2,7 +2,7 @@
   "name": "test-task-teaboom",
   "version": "1.0.0",
   "description": "ТЗ — карточка товара Teaboom.ru",
-  "homepage": "https://elenaiartseva.github.io/teaboom/",
+  "homepage": "https://elenaiartseva.github.io/test-task-teaboom/",
   "scripts": {
     "build": "npm run build:css && node scripts/copy-build.js",
     "build:css": "sass scss/main.scss css/main.css --style=expanded",

@@ -56,11 +56,8 @@ npm run watch:css
 ├── js/
 │   ├── product-data.js     # данные продукта: фасовки, цены, советы, описание, свойства
 │   └── main.js             # интерактив: фасовки, lightbox, табы, карусель
-├── scripts/
-│   └── copy-build.js       # подготовка папки build для публикации
 ├── assets/
 │   └── images/             # изображения товара и фон
-├── .nojekyll               # отключение Jekyll на GitHub Pages
 ├── package.json            # npm-скрипты
 ├── package-lock.json        # зафиксированные версии зависимостей
 └── README.md
@@ -76,4 +73,4 @@ npm run watch:css
 
 ## Ссылка на демку
 
-https://elenaiartseva.github.io/teaboom/
+https://elenaiartseva.github.io/test-task-teaboom/
