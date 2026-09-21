@@ -1,0 +1,19 @@
+{
+  "name": "test-task-teaboom",
+  "version": "1.0.0",
+  "description": "ТЗ — карточка товара Teaboom.ru",
+  "homepage": "https://elenaiartseva.github.io/teaboom/",
+  "scripts": {
+    "build:css": "sass scss/main.scss css/main.css --style=expanded",
+    "watch:css": "sass scss/main.scss css/main.css --watch --style=expanded",
+    "start": "npx --yes serve .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "sass": "^1.77.0"
+  },
+  "dependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
