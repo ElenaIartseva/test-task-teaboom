@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ананасовый улун — Teaboom</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <main class="page">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <ol class="breadcrumbs__list">
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Начало</a></li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a></li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Улун</a></li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Ароматизированный улун</a></li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Китайский ароматизированный улун</a></li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Китайский светлый ароматизированный улун</a></li>
+        <li class="breadcrumbs__item breadcrumbs__item--current" aria-current="page">Ананасовый улун</li>
+      </ol>
+    </nav>
+
+    <h1 class="page__title" id="product-name" itemprop="name">Ананасовый улун</h1>
+
+    <article class="product-card" itemscope itemtype="https://schema.org/Product" itemref="product-name">
+      <div class="product-card__gallery">
+        <figure class="product-card__image-wrap" id="product-image-wrap">
+          <span class="product-card__badge">Скидка!</span>
+          <img
+            class="product-card__image"
+            id="product-main-image"
+            src="assets/images/ananasovij_ulun.png"
+            alt="Ананасовый улун — сухой чай с кусочками ананаса"
+            width="380"
+            height="380"
+            itemprop="image"
+          >
+          <button
+            class="product-card__zoom"
+            type="button"
+            id="open-lightbox"
+            aria-label="Увеличить изображение"
+            aria-controls="image-lightbox"
+          >
+            <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
+              <circle cx="7.5" cy="7.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="11.5" y1="11.5" x2="16" y2="16" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="5.5" y1="7.5" x2="9.5" y2="7.5" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="7.5" y1="5.5" x2="7.5" y2="9.5" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </button>
+        </figure>
+        <ul class="product-card__thumbs" aria-label="Фотографии товара">
+          <li>
+            <button
+              class="product-card__thumb product-card__thumb--active"
+              type="button"
+              data-alt="Ананасовый улун — общий вид"
+              aria-label="Фото 1 — общий вид"
+              aria-current="true"
+            >
+              <img src="assets/images/ananasovij_ulun.png" alt="" width="68" height="68">
+            </button>
+          </li>
+          <li>
+            <button
+              class="product-card__thumb"
+              type="button"
+              data-alt="Ананасовый улун — вид 2"
+              aria-label="Фото 2"
+            >
+              <img src="assets/images/ananasovij_ulun_2.png" alt="" width="68" height="68">
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="product-card__body">
+        <p class="product-card__category" itemprop="category">Китайский светлый ароматизированный улун</p>
+
+        <div class="product-card__actions">
+          <a class="product-card__review" href="#">
+            <svg class="product-card__review-icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M2 2h12v8H5l-3 3V2z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+            </svg>
+            оставить отзыв
+          </a>
+          <button class="product-card__wishlist" type="button" aria-label="Добавить в избранное">
+            <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
+              <path d="M9 15s-6-4.2-6-8.2a3.5 3.5 0 0 1 6-2.2A3.5 3.5 0 0 1 15 6.8C15 10.8 9 15 9 15z" fill="none" stroke="currentColor" stroke-width="1.3"/>
+            </svg>
+          </button>
+        </div>
+
+        <fieldset class="product-card__weights">
+          <legend class="product-card__weights-label">Выберите фасовку</legend>
+          <ul class="product-card__weights-list" id="product-weights" role="radiogroup" aria-label="Фасовка"></ul>
+        </fieldset>
+
+        <div class="product-card__purchase" aria-live="polite">
+          <p class="product-card__selected">
+            <span class="product-card__selected-label">Выбрано:</span>
+            <span id="product-weight">100 г</span>,
+            арт. <span id="product-article">01306</span>
+          </p>
+          <div class="product-card__purchase-prices" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+            <span class="product-card__purchase-price" id="product-price" itemprop="price" content="326.40">326,40 ₽</span>
+            <span class="product-card__purchase-old-price" id="product-old-price">349,20 ₽</span>
+            <meta itemprop="priceCurrency" content="RUB">
+          </div>
+          <button class="product-card__cart" type="button" id="add-to-cart">
+            <svg class="product-card__cart-icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+              <path d="M2 2h2l1.5 9h11L18 6H6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <circle cx="8" cy="16" r="1.5" fill="currentColor"/>
+              <circle cx="15" cy="16" r="1.5" fill="currentColor"/>
+            </svg>
+            В корзину
+          </button>
+        </div>
+
+      </div>
+
+      <div class="product-extra">
+        <section class="product-tips" aria-labelledby="tips-heading">
+          <h2 class="product-extra__title" id="tips-heading">Советы к применению:</h2>
+          <ul class="product-tips__list" id="product-tips"></ul>
+        </section>
+
+        <section class="product-related" aria-labelledby="related-heading">
+          <div class="product-related__header">
+            <h2 class="product-extra__title" id="related-heading">Похожие и сопутствующие товары:</h2>
+            <div class="product-related__nav">
+              <button class="product-related__arrow" type="button" id="related-prev" aria-label="Предыдущие товары">
+                <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true">
+                  <path d="M9 2L4 7l5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <button class="product-related__arrow" type="button" id="related-next" aria-label="Следующие товары">
+                <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true">
+                  <path d="M5 2l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="product-related__viewport">
+            <div class="product-related__track" id="related-track">
+            <a class="product-related__item" href="#">
+              <img class="product-related__image" src="assets/images/ananasovij_ulun.png" alt="" width="64" height="64">
+              <span class="product-related__name">Персиковый улун (Тайвань)</span>
+            </a>
+            <a class="product-related__item" href="#">
+              <img class="product-related__image" src="assets/images/ananasovij_ulun.png" alt="" width="64" height="64">
+              <span class="product-related__name">Ананасовый улун (Тайвань)</span>
+            </a>
+            <a class="product-related__item" href="#">
+              <img class="product-related__image" src="assets/images/ananasovij_ulun_2.png" alt="" width="64" height="64">
+              <span class="product-related__name">Молочный улун (Тайвань)</span>
+            </a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="product-tabs">
+        <div class="product-tabs__nav" role="tablist" aria-label="Информация о товаре">
+          <button
+            class="product-tabs__tab product-tabs__tab--active"
+            type="button"
+            role="tab"
+            id="tab-description"
+            aria-selected="true"
+            aria-controls="panel-description"
+          >Описание</button>
+          <button
+            class="product-tabs__tab"
+            type="button"
+            role="tab"
+            id="tab-properties"
+            aria-selected="false"
+            aria-controls="panel-properties"
+            tabindex="-1"
+          >Свойства</button>
+          <button
+            class="product-tabs__tab"
+            type="button"
+            role="tab"
+            id="tab-reviews"
+            aria-selected="false"
+            aria-controls="panel-reviews"
+            tabindex="-1"
+          >Отзывы</button>
+        </div>
+
+        <div
+          class="product-tabs__panel product-tabs__panel--active"
+          role="tabpanel"
+          id="panel-description"
+          aria-labelledby="tab-description"
+        ></div>
+
+        <div
+          class="product-tabs__panel"
+          role="tabpanel"
+          id="panel-properties"
+          aria-labelledby="tab-properties"
+          hidden
+        >
+          <ul class="product-tabs__properties" id="product-properties"></ul>
+        </div>
+
+        <div
+          class="product-tabs__panel"
+          role="tabpanel"
+          id="panel-reviews"
+          aria-labelledby="tab-reviews"
+          hidden
+        >
+          <div class="product-tabs__reviews">
+            <p class="product-tabs__reviews-empty">Ещё никто не оставлял отзывов. Будьте первым!</p>
+            <p class="product-tabs__reviews-auth">Авторизуйтесь, чтобы оставить отзыв</p>
+            <a class="product-tabs__login" href="#">
+              Войти
+              <svg class="product-tabs__login-icon" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
+                <circle cx="9" cy="9" r="8"/>
+                <path d="M8 6l3 3-3 3" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <dialog class="image-lightbox" id="image-lightbox" aria-labelledby="lightbox-title">
+    <div class="image-lightbox__backdrop" data-close-lightbox></div>
+    <div class="image-lightbox__content">
+      <figure class="image-lightbox__figure">
+        <img
+          class="image-lightbox__image"
+          src="assets/images/ananasovij_ulun.png"
+          alt="Ананасовый улун — увеличенное изображение"
+          width="640"
+          height="640"
+        >
+      </figure>
+      <div class="image-lightbox__footer">
+        <p class="image-lightbox__title" id="lightbox-title">Ананасовый улун</p>
+        <button class="image-lightbox__close" type="button" data-close-lightbox aria-label="Закрыть">
+          <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+            <line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2"/>
+            <line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="js/product-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
