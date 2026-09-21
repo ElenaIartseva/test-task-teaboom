@@ -43,7 +43,6 @@ npm run build:css
 npm run watch:css
 ```
 
-
 ## Структура проекта
 
 ```text
@@ -57,6 +56,8 @@ npm run watch:css
 ├── js/
 │   ├── product-data.js     # данные продукта: фасовки, цены, советы, описание, свойства
 │   └── main.js             # интерактив: фасовки, lightbox, табы, карусель
+├── scripts/
+│   └── copy-build.js       # подготовка папки build для публикации
 ├── assets/
 │   └── images/             # изображения товара и фон
 ├── .nojekyll               # отключение Jekyll на GitHub Pages
@@ -71,3 +72,8 @@ npm run watch:css
 - SCSS / CSS
 - CSS Grid и Flexbox
 - Vanilla JavaScript
+
+
+## Ссылка на демку
+
+https://elenaiartseva.github.io/teaboom/
